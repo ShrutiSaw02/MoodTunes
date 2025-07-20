@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodTunes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="theme-toggle" class="theme-btn">🌙 Toggle Dark Mode</button>
+
+    <h1>MoodTunes 🎵</h1>
+    <p>How are you feeling today?</p>
+
+    <div class="mood-selection">
+      <button class="mood-btn" data-mood="happy">😊 Happy</button>
+      <button class="mood-btn" data-mood="sad">😢 Sad</button>
+      <button class="mood-btn" data-mood="excited">🤩 Excited</button>
+      <button class="mood-btn" data-mood="calm">😌 Calm</button>
+      <button class="mood-btn" data-mood="romantic">❤️ Romantic</button>
+      <button class="mood-btn" data-mood="angry">😡 Angry</button>
+    </div>
+
+    <div id="mood-result" class="hidden">
+      <h2 id="mood-title"></h2>
+      <p id="mood-quote"></p>
+      <img id="mood-image" src="" alt="Mood image" />
+      <iframe id="mood-song" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
